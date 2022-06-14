@@ -1,4 +1,4 @@
-@Library('mylibrary') _
+@Library('mylibrary') 
 
 import com.cleverbuilder.GlobalVars
 import com.cleverbuilder.SampleClass
@@ -11,9 +11,7 @@ pipeline {
                 echo 'Hello, world'
                 sayHello 'Dave'
 
-                echo 'The value of foo is : ' + GlobalVars.foo
-
-                script {
+                    script {
                     def person = new SampleClass()
                     person.age = 21
                     person.increaseAge(10)
